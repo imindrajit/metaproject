@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+<title>Details</title>
+</head>
+<h1>Scrapped Websites</h1>
+<body>
+<table>
+{% for object in objects %}
+	<tr><td>{{ object.link }}</td>
+	    <td>{{ object.title }}</td>
+	    <td>{{ object.timestamp }}</td>
+	    <td>{{ object.meta }}</td>
+	</tr>
+{% endfor %}
+</table>
+<br />
+</body>
+</html>
